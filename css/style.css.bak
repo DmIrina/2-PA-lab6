@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+
+header {    
+    color: white;
+    text-align: center;    
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    position: relative;
+	margin: 20px;
+}
+
+.button {
+    color: white;
+    font-size: 22px;
+    font-family: sans-serif;
+    outline: none;
+    user-select: none;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(5, 51, 1);
+    width: 200px;
+    height: 50px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(7, 73, 1);
+}
+
+/* header { */
+    /* /* display: flex; */ */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* height: 10vh; */
+    /* /* background-color: white; */ */
+/* } */
+
+main {
+    height: 70vh;
+}
+
+footer {
+    margin: 0 auto;
+    width: 80%;
+    height: 20vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0;
+    padding: 0 15px;
+    height: 90%;
+}
+
+.game-screen {
+    margin: 0 auto;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.field {
+    width: auto;
+    font-size: 48px;
+    display: flex;
+    grid-gap: 20px;
+}
+
+.field-item {
+    /* background-color: yellow; */
+    color: green;
+    display: grid;
+    grid-template-rows: repeat(2, 50%);
+    text-align: center;
+    /* border: 1px solid grey; */
+}
+
+.field-item__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+
+.field-item__button {
+	background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}
+
+
+.number-checkbox {
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+	
+}
+
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.turn {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+}
+
+.roll-result {
+    font-size: 32px;
+}
+
+.roll-animation  {
+    position: absolute;
+    top: 15vh;
+    left: 58%;
+    display: none;
+}
+
+.roll-animation.active {
+    display: block;
+}

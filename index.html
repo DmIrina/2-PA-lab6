@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Закрой сектор</title>
+</head>
+<body>
+    <header>
+		<div>
+			<h1>Гра "Закрий сектор"</h1>
+		</div>	
+        <div >
+            <div class="turn">
+                <span>Грає: <span id='current-turn'></span></span>
+            </div>
+            <div class="roll-result" id="roll-result">
+                <span> Викинуто очок: </span> <span class="roll-result-number">0</span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="left_block">
+                <div class="game-screen">
+                    <div class="field">
+                        <!--Filling board from js-->
+                    </div>
+                </div>
+            </div>
+
+                <div class="dice right_block">
+                    <ol class="die-list even-roll" data-roll="1" id="die-1">
+                        <li class="die-item" data-side="1">
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="2">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="3">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="4">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="5">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="6">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                    </ol>
+                    <ol class="die-list odd-roll" data-roll="1" id="die-2">
+                        <li class="die-item" data-side="1">
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="2">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="3">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="4">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="5">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                        <li class="die-item" data-side="6">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </li>
+                    </ol>
+                </div>
+            <div class="sum_block">
+                <div id='sum'>
+                    0
+                </div>
+                <button type="button"  class="btn button3 roll-button" id="roll-button">Підкинути кубики</button>
+            </div>
+            </div>
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
